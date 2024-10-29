@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import refinement as rf
 df=rf.load_table()
-#df=df[df['pl_name']!='TOI-1694 c']
+df.drop(index='TOI-1694 c',inplace=True) #suppression d'un point abérant
 un_sur_M=1/df['st_mass']
 T2=df['pl_orbper']**2
 a3=df['pl_orbsmax']**3

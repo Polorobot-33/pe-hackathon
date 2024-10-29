@@ -22,3 +22,4 @@ for i in categories:
     nombre.append(df_i.shape[0])
 plt.bar(identifiant,nombre,color='purple')
 plt.title('Nombre de planètes découvertes par méthode')
+print('Pour la dernière courbe : 1=Radial Velocity, 2=Imaging, 3=Eclipse Timing Variations, 4=Transit, 5=Transit Timing Variations, 6=Astrometry, 7=Microlensing, 8=Disk Kinematics, 9=Orbital Brightness Modulation, 10=Pulsation Timing Variations, 11=Pulsar Timing')
